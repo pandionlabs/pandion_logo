@@ -2,6 +2,23 @@
 
 ## Exported version
 
+Below is a tree of the available exported files and previews of the PNG logos.
+
+```
+pandion_logo/export/
+├── black/
+│   ├── pandionlabs_logo.svg  (Vector - black/white version)
+│   └── pandionlabs_logo_1200px.png (1200px width - black/white version)
+└── color/
+    ├── pandionlabs_logo.svg  (Vector - color version)
+    └── pandionlabs_logo_1200px.png (1200px width - color version)
+```
+
+### Color Version Preview
+![Pandion Labs Logo Color](export/color/pandionlabs_logo_1200px.png)
+
+### Black Version Preview
+![Pandion Labs Logo Black](export/black/pandionlabs_logo_1200px.png)
 
 ## Editable version
 
