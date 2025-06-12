@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 from pathlib import Path
 from lxml import etree
 from pyprojroot import here
@@ -38,7 +36,7 @@ logo_variants_config: list[LogoVariant] = [
     LogoVariant(filename="pandionlabs_logo_text_black.svg", ids_remove=["white-background-large", "background-gradient-large", "background-logo-circle"], size="large"),
 ]
 
-input_svg_path = here("editable/pandionlabs_logo_editable_simple2.svg")
+input_svg_path = here("editable/pandionlabs_logo_editable_simple.svg")
 output_dir = here("export")
 
 # IDs of elements to always remove from any generated version
@@ -68,9 +66,9 @@ def generate_variant(base_tree: etree.ElementTree, logo_variant: LogoVariant) ->
 
     if logo_variant.size == "small":
         root = new_tree.getroot()
-        root.set("viewBox", "0 0 884.65929 899.57255")
-        root.set("width", "1191.1383")
-        root.set("height", "1196.353")
+        root.set("viewBox", "0 0 1200 1200")
+        root.set("width", "1200")
+        root.set("height", "1200")
 
     return new_tree
 
