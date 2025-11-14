@@ -40,7 +40,7 @@
   // The page can contain a logo if you pass one with `logo: "logo.png"`.
   v(0.6fr)
   if logo != none {
-    align(right, image(logo, width: 30%))
+    align(right, link("https://pandionlabs.dev/", image(logo, width: 30%)))
   }
   v(9.6fr)
 
